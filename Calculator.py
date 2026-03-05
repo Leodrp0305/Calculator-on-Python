@@ -1,6 +1,8 @@
 print ("Welcome to Calculator!")
 #after Welcoming we set out basic math functions and initialize the res variable
-res = 0 
+res = 0
+history = []
+i= 0
 def sum(x,y): return x + y
 
 def less(x,y): return x - y
@@ -20,9 +22,8 @@ while True:
 
     #if that stops the software so this is not a infinity loop
     if operation == "1":
-        break
         print ("\n Thank you for using my software, Goodbye!")
-
+        break
     elif operation != "+" and operation != "-" and operation != "/" and operation != "*":
         print ("\nInvalid operation")
         continue
@@ -49,3 +50,9 @@ while True:
             continue 
 
     print ("\n Result: \n",res)
+    i +=1
+    history.append(res);
+    print ("\n History: \n")
+    for j in range(max(0, i-5), i):
+        print(history[j])
+
