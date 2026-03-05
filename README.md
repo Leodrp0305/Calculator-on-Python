@@ -10,6 +10,6 @@
 
   <h3>Equipments:</h3>
 
-  -Linux
+  - Linux
   - Vim
   - Lot of search
